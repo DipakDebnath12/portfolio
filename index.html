@@ -1,451 +1,831 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Dipak Debnath</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dipak Debnath — Full Stack &amp; AI Developer</title>
+<meta name="description" content="Portfolio of Dipak Debnath, a BCA graduate from West Bengal specializing in full-stack web development (Node.js, Express, MySQL) and exploring AI-assisted engineering. View projects including SmartQ, a government queue management system.">
+<meta name="keywords" content="Dipak Debnath, Full Stack Developer, Web Developer, AI Developer, Balurghat, West Bengal, Node.js, MySQL, SmartQ, Portfolio">
+<meta name="author" content="Dipak Debnath">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://dipakdebnath.in/">
 
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dipak Debnath — Full Stack &amp; AI Developer">
+<meta property="og:description" content="BCA graduate building full-stack web applications and exploring AI. Explore projects, skills and services.">
+<meta property="og:image" content="assets/images/og-cover.jpg">
+<meta property="og:url" content="https://dipakdebnath.in/">
+<meta property="og:site_name" content="Dipak Debnath Portfolio">
 
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dipak Debnath — Full Stack &amp; AI Developer">
+<meta name="twitter:description" content="BCA graduate building full-stack web applications and exploring AI.">
+<meta name="twitter:image" content="assets/images/og-cover.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="alternate icon" href="assets/icons/favicon.ico">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+<!-- Devicon (tech-stack logos) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.17.0/devicon.min.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.net/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dipak Debnath",
+  "jobTitle": "Full Stack Developer",
+  "url": "https://dipakdebnath.in/",
+  "email": "mailto:debdipak8101@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Balurghat", "addressRegion": "West Bengal", "addressCountry": "IN" },
+  "sameAs": ["https://github.com/DipakDebnath12"]
+}
+</script>
 </head>
 <body>
-    <!--header-->
-    <header class="active">
-        <a href="javascript:void(0)" class="logo">Dipak.</a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+<!-- ===== Loading Screen ===== -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-content">
+    <span class="loader-token">DD<span class="loader-dot">_</span></span>
+    <div class="loader-bar"><span class="loader-fill"></span></div>
+    <span class="loader-caption">$ initializing portfolio…</span>
+  </div>
+</div>
 
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Services</a>
-            <a href="#resume">Resume</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<!-- ===== Cursor ===== -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
 
-    <!-- bars background-->
-     <div class="bars-box active">
-        <div class="bar" style="--i:6"></div>
-        <div class="bar" style="--i:5"></div>
-        <div class="bar" style="--i:4"></div>
-        <div class="bar" style="--i:3"></div>
-        <div class="bar" style="--i:2"></div>
-        <div class="bar" style="--i:1"></div>
-     </div>
+<!-- ===== Skip link ===== -->
+<a class="skip-link" href="#main">Skip to content</a>
 
+<!-- ===== Navbar ===== -->
+<header class="navbar" id="navbar">
+  <nav class="nav-inner" aria-label="Primary">
+    <a href="#home" class="brand" aria-label="Dipak Debnath — home">
+      <span class="brand-badge">DD</span>
+      <span class="brand-name">Dipak<span class="accent">.</span>in</span>
+    </a>
 
-    <!-- home section-->
-     <section id="home" class="home active">
-        <div class="home-detail">
-            <h1>Dipak Debnath</h1>
-            <h2>I'm a 
-                <span style="--i:4;" data-text="Code Crafter">Code Crafter</span>
-                <span style="--i:3;" data-text="Mern Stack Dev.">Mern Stack Dev.</span>
-                <span style="--i:2;" data-text="AI Enthusiast">AI Enthusiast</span>
-                <span style="--i:1;" data-text="Web Developer">Web Developer</span>
-            </h2>
-            <p> I’m a passionate Web Developer and Java Developer with a strong foundation in building dynamic, responsive, and scalable applications. With hands-on experience in both front-end and back-end technologies, I specialize in crafting intuitive user interfaces and robust backend systems. </p>
-            <div class="btn-sci">
-                <a href="https://drive.google.com/file/d/1aXQg8YTVaBWqFesGPxe3_VZUeG8RABHr/view?usp=drive_link" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a>
-                <div class="sci">
-                    <a href="javascript:void(0)"><i class='bx bxl-github'></i></a>
-                    <a href="javascript:void(0)"><i class='bx bxl-linkedin'></i></a>
-                    <a href="javascript:void(0)"><i class='bx bxl-discord'></i></a>
-                    <a href="javascript:void(0)"><i class='bx bxl-facebook'></i></a>
-                    <a href="javascript:void(0)"><i class='bx bxl-instagram'></i></a>
-                </div>
-            </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+      <li><a href="#about" class="nav-link" data-nav>About</a></li>
+      <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+      <li><a href="#experience" class="nav-link" data-nav>Experience</a></li>
+      <li><a href="#services" class="nav-link" data-nav>Services</a></li>
+      <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <i data-lucide="moon" class="icon-moon"></i>
+        <i data-lucide="sun" class="icon-sun"></i>
+      </button>
+      <a href="#contact" class="btn btn-sm btn-primary nav-cta">Hire Me</a>
+      <button id="nav-toggle" class="icon-btn nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-center">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow eyebrow-hero">AVAILABLE FOR HIRE &middot; WEST BENGAL, INDIA</p>
+        <h1 class="hero-title">
+          Hi, I'm <span class="name-accent">Dipak Debnath</span>
+        </h1>
+        <p class="hero-role">
+          <span id="typed-role" class="typed-role">BCA Graduate</span><span class="cursor-blink">_</span>
+        </p>
+        <p class="hero-desc">
+          I design and build full-stack web applications end to end — from
+          MySQL schemas and Node.js APIs to responsive, accessible interfaces.
+          Lately I've been pairing that with AI-assisted tooling to ship
+          faster and build smarter products.
+        </p>
+
+        <span class="divider-grad divider-center"></span>
+
+        <div class="hero-social" aria-label="Social links">
+          <a href="https://github.com/DipakDebnath12" target="_blank" rel="noopener" class="social-badge" aria-label="GitHub"><i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></i></a>
+          <a href="https://linkedin.com/in/dipakdebnath" target="_blank" rel="noopener" class="social-badge" aria-label="LinkedIn"><i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></i></a>
+          <a href="mailto:debdipak8101@gmail.com" class="social-badge" aria-label="Email"><i data-lucide="mail"></i></a>
+          <a href="https://leetcode.com/u/DipakDebnath/" class="social-badge" target="_blank" rel="noopener" aria-label="LeetCode"><i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 12.5c0 5.25-4.25 9.5-9.5 9.5s-9.5-4.25-9.5-9.5 4.25-9.5 9.5-9.5 9.5 4.25 9.5 9.5z"></path><path d="M7 12h10"></path><path d="M12 7v10"></path></svg></i></a>
         </div>
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="photo12.jpg" alt="">
-                </div>
-            </div>
 
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <i data-lucide="send" class="btn-icon"></i> Hire Me
+          </a>
+          <a href="assets/resume/Dipak_Debnath_Resume.pdf" class="btn btn-ghost" download>
+            <i data-lucide="download" class="btn-icon"></i> Download Resume
+          </a>
         </div>
-     </section>
 
-     <!-- services section-->
-     <section id="services" class="services">
-        <h2 class="heading">My <span>Services</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-code'></i>
-                    <a href="javascript:void(0)"><i class='bx bx-right-arrow-alt'></i></a>
-                </div>
-                <h3>Web Development</h3>
-                <p>Turning big ideas into modern, easy-to-use websites. I handle everything from design to code to ensure your visitors enjoy a fast , seamless experience.</p>
-            </div>
-
-             <div class="services-box">
-                <div class="icon">
-                    <i class='bx bxs-paint'></i>
-                    <a href="javascript:void(0)"><i class='bx bx-right-arrow-alt'></i></a>
-                </div>
-                <h3>UI/UX Design</h3>
-                <p>Creating intuitive and engaging user interfaces that enhance the overall user experience.</p>
-            </div>
-
-             <div class="services-box">
-                <div class="icon">
-                    <i class='bx bxs-server'></i>
-                    <a href="javascript:void(0)"><i class='bx bx-right-arrow-alt'></i></a>
-                </div>
-                <h3>Database Management & Optimization</h3>
-                <p>Designing relational and NoSQL database architecture, executing complex queries, and tuning system performance for high reliability.</p>
-            </div>
-
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bxs-chip'></i>
-                    <a href="javascript:void(0)"><i class='bx bx-right-arrow-alt'></i></a>
-                </div>
-                <h3>AI & Machine Learning Solutions</h3>
-                <p>Building predictive models, natural language processing tools, and intelligent automation systems to convert data into actionable business insights.</p>
-            </div>
-            
-
+        <div class="stat-card" aria-label="Quick facts">
+          <div class="stat-row">
+            <span class="stat-label">Projects Shipped</span>
+            <span class="stat-num" data-count="3">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Tech &amp; Tools</span>
+            <span class="stat-num" data-count="15">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Grade Point (CGPA)</span>
+            <span class="stat-num" data-count="7">0</span>
+          </div>
         </div>
-     </section>
+      </div>
+    </div>
 
-     <!--resume section-->
-     <section id="resume" class="resume">
-        <div class="resume-container">
-            <div class="resume-box">
-                <h2>Why Hire Me?</h2>
-                <p class="desc">I am an MCA student and Full Stack Web Developer with a strong foundation in Java, Data Structures & Algorithms, React, Node.js, Express.js, and MySQL. I enjoy building responsive web applications, AI-powered projects, and solving real-world problems through technology. I am eager to contribute, learn continuously, and grow as a software engineer.</p>
-                <button class="resume-btn active">Experience</button>
-                <button class="resume-btn">Education</button>
-                <button class="resume-btn">Skills</button>
-                <button class="resume-btn">About Me</button>
-            </div>
-            <div class="resume-box">
-                <div class="resume-detail experience active">
-                    <h2 class="heading">My <span>Experience</span></h2>
-                    <p class="desc">FRESHERS</p>
-                    <div class="resume-list">
-                        <!--<div class="resume-item">
-                            <p class="year">2025 - Present</p>
-                            <h3>Frontend Developer</h3>
-                            <p class="company">Abc Corp.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur?</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2021 - 2024</p>
-                            <h3>Frontend Developer</h3>
-                            <p class="company">Abc Corp.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur?</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2021 - 2024</p>
-                            <h3>Frontend Developer</h3>
-                            <p class="company">Abc Corp.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur?</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2021 - 2024</p>
-                            <h3>Frontend Developer</h3>
-                            <p class="company">Abc Corp.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur?</p>
-                        </div>-->
-                    </div>
-                    
-                </div> 
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
 
-                <div class="resume-detail education">
-                    <h2 class="heading">My <span>Education</span></h2>
-                    <p class="desc">My academic journey has helped me build a strong foundation in computer applications, programming, software development, and problem-solving. Alongside my degree, I continuously improve my skills through online courses, personal projects, and practical learning.</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p class="year">2025-Present</p>
-                            <h3> Master's Of Computer Application</h3>
-                            <p class="company"><span>Maulana Abul Kalam Azad University</span></p>
-                            <p>Currently pursuing MCA with a focus on Software Development, Data Structures, Web Technologies, Cloud Computing, and Artificial Intelligence.</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2022-2025</p>
-                            <h3> Bachelor's Of Computer Application (Hons.)</h3>
-                            <p class="company">Siliguri College, <span>University Of North Bengal</span></p>
-                            <p> Graduated with CGPA: 7.84, gaining strong knowledge in Java, Database Management Systems, Computer Networks, Operating Systems, and Web Development.</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2020-2022</p>
-                            <h3> Higher Secondary Education</h3>
-                            <p class="company">Balurghat Lalit Mohan Adarsha Uchcha Vidyalaya, <span>WBCHSE</span></p>
-                            <p> Percentage: 89.6%, Grade: A+ </p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2020</p>
-                            <h3> Secondary Education</h3>
-                            <p class="company">Balurghat Lalit Mohan Adarsha Uchcha Vidyalaya, <span>WBCHSE</span></p>
-                            <p> Percentage: 80.57%, Grade: A+ </p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2024-Present</p>
-                            <h3> Web Devlopment</h3>
-                            <p class="company">Self Learning & Online Platforms</p>
-                            <p>Learning React.js, Node.js, Express.js, REST APIs, Authentication (JWT), Bootstrap, Git & GitHub, and deploying applications using Netlify and modern web technologies.</p>
-                        </div>
-                    </div>
-                </div>
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="eyebrow" data-reveal>01 / ABOUT</p>
+      <h2 class="section-title" data-reveal>About</h2>
+      <span class="divider-grad" data-reveal></span>
 
-                <div class="resume-detail skills">
-                    <h2 class="heading">My <span>Skills</span></h2>
-                    <p class="desc">Here are some of the skills I have developed throughout my academic and personal projects.</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <i class='bx bxl-html5'></i>
-                            <span>HTML</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-css3'></i>
-                            <span>CSS</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-javascript'></i>
-                            <span>Javascript</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-react'></i>
-                            <span>React.js</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-bootstrap'></i>
-                            <span>Bootstrap</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-java'></i>
-                            <span>Java</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxs-copyright'></i>
-                            <span>C</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-php'></i>
-                            <span>PHP</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-nodejs'></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-mysql'></i>
-                            <span>MySQL</span>
-                        </div>
-                         <div class="resume-item">
-                            <i class='bx bxl-mongodb'></i>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="resume-detail about">
-                    <h2 class="heading">About <span>Me</span></h2>
-                    <p class="desc">Passionate MCA student and aspiring Full Stack & AI Developer with a strong interest in building modern web applications. I enjoy learning new technologies and solving real-world problems through code.</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p>Name <span>Dipak Debnath</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Gender <span>Male</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Age <span>22 Years old</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Status<span>Single</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>City <span>Balurghat</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Nationality<span>Indian</span></p>
-                        </div><div class="resume-item">
-                            <p>Experience<span> Freashers</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Full Time<span> Available</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Freelance<span>Available</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Phone<span>(+91) 8101504042</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Email<span>debdipak8101@gmail.com</span></p>
-                        </div>
-                        <div class="resume-item">
-                            <p>Language<span>English, Hindi, Bengali</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="about-grid">
+        <div class="about-copy" data-reveal>
+          <p><b>Full-Stack Developer | MCA 2027 (MAKAUT)</b></p>
+          <p>Hi. I'm a MCA student, a devloper, and a Professional Googler of my own error meassages.<br>
+          I like building thimgs. I like breaking them even more, usually by accident. Then i fix them, and for five glorious minutes, i fell like a genius.That felling never lasts long.<br>
+          I'm curious about technology in a healthy, non-obsessive way. Give me a problem, and I'll poke at it until it works, or until I fully understand why it refuses to.<br>
+          Some things in tech are complicated for good reasons. Others are complicated because someone, somewhere, decided suffering builds character. I still don't know why changing one button needs 47 pages of documentation and a small existential crisis.<br>
+          I don't have the energy for all that. I have energy for building, experimenting, and staring at my screen like it personally betrayed me.<br>
+          I like simple solutions to messy problems. Clean code. Fewer bugs than yesterday. That's the dream.<br>
+          And speaking of energy — I know you didn't come here to read a novel, so I'll stop before this section turns into the same 47 pages I keep complaining about.<br>
+          I build things. I fix things. I learn fast, and I respect your time.<br>
+          Looking for opportunities where I get to do exactly that.</p>
+          <p>
+            <b>Objective:</b> Available for Software Engineer (SDE) or Backend Developer roles to build scalable web platforms and high-throughput microservices.
+          </p>
+          <div class="about-badges">
+            <span class="badge"><i data-lucide="map-pin"></i> Balurghat, West Bengal</span>
+            <span class="badge"><i data-lucide="graduation-cap"></i> MCA, 2027</span>
+            <span class="badge"><i data-lucide="languages"></i> English &middot; Hindi &middot; Bengali</span>
+          </div>
         </div>
-     </section>
 
-     <!--Portfolio Section-->
-     <section id="portfolio" class="portfolio ">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <div class="portfolio-detail active">
-                    <p class="numb">01</p>
-                    <h3>Smart Queue Management System for Goverment offices</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maxime?</p>
-                    <div class="tech">
-                        <p>HTMl5, CSS3, Bootstrap, Javascript, node.js, Mysql</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="javascript:void(0)"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="javascript:void(0)"><i class='bx bxl-github'></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-                <div class="portfolio-detail">
-                    <p class="numb">02</p>
-                    <h3>Frontend Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maxime?</p>
-                    <div class="tech">
-                        <p>HTMl5, CSS3, Javascript</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="javascript:void(0)"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="javascript:void(0)"><i class='bx bxl-github'></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-                <div class="portfolio-detail">
-                    <p class="numb">03</p>
-                    <h3>Full Stack Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maxime?</p>
-                    <div class="tech">
-                        <p>Mongodb, Express.js, React.js, Node.js</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="javascript:void(0)"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="javascript:void(0)"><i class='bx bxl-github'></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-                <div class="portfolio-detail">
-                    <p class="numb">04</p>
-                    <h3>Frontend Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maxime?</p>
-                    <div class="tech">
-                        <p>React.js, Tailwind CSS</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="javascript:void(0)"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="javascript:void(0)"><i class='bx bxl-github'></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-                <div class="portfolio-detail">
-                    <p class="numb">05</p>
-                    <h3>Full Stack Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maxime?</p>
-                    <div class="tech">
-                        <p>Mongodb, Express.js, Angular.js, Node.js</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="javascript:void(0)"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="javascript:void(0)"><i class='bx bxl-github'></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-                <div class="portfolio-detail">
-                    <p class="numb">06</p>
-                    <h3>Frontend Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maxime?</p>
-                    <div class="tech">
-                        <p>HTMl5, CSS3, Javascript</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="javascript:void(0)"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="javascript:void(0)"><i class='bx bxl-github'></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <div class="portfolio-carousel">
-                    <div class="img-slide">
-                        <div class="img-item">
-                            <img src="portfolio1.jpg">
-                        </div>
-                        <div class="img-item">
-                            <img src="portfolio2.jpg">
-                        </div>
-                        <div class="img-item">
-                            <img src="portfolio3.jpg">
-                        </div>
-                        <div class="img-item">
-                            <img src="portfolio4.jpg">
-                        </div>
-                        <div class="img-item">
-                            <img src="portfolio5.jpg">
-                        </div>
-                        <div class="img-item">
-                            <img src="portfolio6.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="navigation">
-                    <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
-                    <button class="arrow-right"><i class='bx bx-chevron-right' ></i></button>
-                </div>
-            </div>
+        <div class="timeline" data-reveal>
+          <h3 class="timeline-heading">Education</h3>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <span class="timeline-dot">01</span>
+              <div class="timeline-content">
+                <span class="timeline-year">2027</span>
+                <h4>MCA</h4>
+                <p class="meta-row"><span class="meta-label">Institution:</span> <span class="meta-value"> Maulana Abul Kalam Azad University of Technology, WB</span></p>
+                <p class="meta-row"><span class="meta-label">CGPA:</span> <span class="meta-value"> loading </span></p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot">02</span>
+              <div class="timeline-content">
+                <span class="timeline-year">2025</span>
+                <h4>BCA (Hons.)</h4>
+                <p class="meta-row"><span class="meta-label">Institution:</span> <span class="meta-value">Siliguri College, North Bengal University</span></p>
+                <p class="meta-row"><span class="meta-label">CGPA:</span> <span class="meta-value">7.84 &middot; Grade A</span></p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot">03</span>
+              <div class="timeline-content">
+                <span class="timeline-year">2022</span>
+                <h4>Higher Secondary (12th), WBCHSE</h4>
+                <p class="meta-row"><span class="meta-label">Institution:</span> <span class="meta-value">Balurghat L.M.A.U. Vidyalaya</span></p>
+                <p class="meta-row"><span class="meta-label">Score:</span> <span class="meta-value">89.6% &middot; Grade A+</span></p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot">04</span>
+              <div class="timeline-content">
+                <span class="timeline-year">2020</span>
+                <h4>Secondary (10th), WBBSE</h4>
+                <p class="meta-row"><span class="meta-label">Institution:</span> <span class="meta-value">Balurghat L.M.A.U. Vidyalaya</span></p>
+                <p class="meta-row"><span class="meta-label">Score:</span> <span class="meta-value">80.57% &middot; Grade A+</span></p>
+              </div>
+            </li>
+          </ol>
         </div>
-     </section>
+      </div>
+    </div>
+  </section>
 
-     <!-- Contact Section-->
-      <section id="contact" class="contact">
-        <div class="contact-container">
-            <div class="contact-box">
-                <h2>Let's Work Together</h2>
-                <p class="desc">If you have any questions, project inquires, or just want to say hello, feel free to reach out!</p>
-                <div class="contact-detail">
-                    <i class='bx bxs-phone'></i>
-                    <div class="detail">
-                        <p>Phone</p>
-                        <p>(+91) 8101504042</p>
-                    </div>
-                </div>
-                <div class="contact-detail">
-                    <i class='bx bxs-envelope'></i>
-                    <div class="detail">
-                        <p>Email</p>
-                        <p>debdipak8101@gmail.com</p>
-                    </div>
-                </div>
-                <div class="contact-detail">
-                    <i class='bx bxs-map'></i>
-                    <div class="detail">
-                        <p>Address</p>
-                        <p>Kolkata, West bengal, India</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-box">
-                <form action="">
-                    <h2 class="heading">Contact <span>Me!</span></h2>
-                    <div class="field-box">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                        <input type="text" placeholder="Phone Number" required>
-                        <input type="text" placeholder="Email Subject" required>
-                        <textarea name="" id="" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
+  <!-- ===== Skills ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <p class="eyebrow" data-reveal>02 / SKILLS</p>
+      <h2 class="section-title" data-reveal>Skills</h2>
+      <span class="divider-grad" data-reveal></span>
+      <p class="section-sub" data-reveal>A practical, hands-on stack — sharpened by shipping a full production-style project from schema to UI.</p>
+
+      <div class="skills-grid" data-reveal>
+        <!-- Frontend -->
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i data-lucide="layout-template"></i> Frontend</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>HTML5</span><span>75%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="75"></span></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>CSS3</span><span>75%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="75"></span></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>JavaScript</span><span>70%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="70"></span></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Bootstrap 5</span><span>75%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="75"></span></div>
+          </div>
+          <!-- <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Tailwind CSS</span><span>78%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="78"></span></div>
+          </div>-->
         </div>
-      </section>
+
+        <!-- Backend -->
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i data-lucide="server"></i> Backend</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Node.js</span><span>65%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="65"></span></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Express.js</span><span>45%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="45"></span></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>PHP</span><span>70%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="70"></span></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>MySQL</span><span>80%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="80"></span></div>
+          </div>
+        </div>
+
+        <!-- Languages & Tools -->
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i data-lucide="terminal"></i> Languages &amp; Tools</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Java</span><span>82%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="82"></span></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Python</span><span>75%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="75"></span></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>C</span><span>78%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="78"></span></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Git &amp; GitHub</span><span>70%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="70"></span></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>AI-Assisted Dev Tools</span><span>50%</span></div>
+            <div class="skill-bar"><span class="skill-fill" data-level="50"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hover cards -->
+      <div class="skill-cards" data-reveal>
+        <div class="skill-hover-card"><i data-lucide="git-branch"></i><h4>Version Control</h4><p>Feature-branch Git workflow with clean, descriptive commits.</p></div>
+        <div class="skill-hover-card"><i data-lucide="shield-check"></i><h4>Auth &amp; Security</h4><p>JWT-based auth, bcrypt hashing, and role-based access control.</p></div>
+        <div class="skill-hover-card"><i data-lucide="smartphone"></i><h4>Responsive UI</h4><p>Mobile-first layouts that hold up from a phone to a 4K display.</p></div>
+        <div class="skill-hover-card"><i data-lucide="bot"></i><h4>AI Tooling</h4><p>Using AI coding assistants to prototype faster without cutting corners.</p></div>
+      </div>
+
+      <!-- Tools showcase -->
+      <div class="tools-heading" data-reveal>
+        <p>Technologies I've</p>
+        <p class="grad-text">Worked With</p>
+      </div>
+      <div class="tools-grid" data-reveal>
+        <div class="tool-card"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+        <div class="tool-card"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+        <div class="tool-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="tool-card"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <div class="tool-card"><i class="devicon-express-original colored"></i><span>Express.js</span></div>
+        <div class="tool-card"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+        <div class="tool-card"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+        <div class="tool-card"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        <div class="tool-card"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="tool-card"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+        <div class="tool-card"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        <div class="tool-card"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="eyebrow" data-reveal>03 / PROJECTS</p>
+      <h2 class="section-title" data-reveal>Projects</h2>
+      <span class="divider-grad" data-reveal></span>
+      <p class="section-sub" data-reveal>A mix of real-world systems and personal experiments — built end to end.</p>
+
+      <div class="project-grid">
+        <!-- Project 1: SmartQ -->
+        <article class="project-card accent-bar tilt-card" data-reveal>
+          <div class="project-media">
+            <img src="assets/images/projects/smartq.jpg" alt="SmartQ home page interface with token booking and live queue tracking" loading="lazy" width="640" height="400">
+            <span class="project-tag">P-01</span>
+            <button type="button" class="video-play-btn" data-video-trigger data-video-type="placeholder" data-video-title="SmartQ — Product Walkthrough" aria-label="Watch SmartQ demo video">
+              <i data-lucide="play"></i>
+            </button>
+          </div>
+          <div class="project-body">
+            <h3>SmartQ — Smart Queue Management System</h3>
+            <p class="project-desc">
+              A full-stack platform that replaces physical queues at
+              government offices with digital tokens, live tracking, and
+              WhatsApp alerts.
+            </p>
+            <div class="case-study">
+              <div class="case-row">
+                <span class="case-label">Problem</span>
+                <p>Citizens had no visibility into queue status, leading to hours of blind, in-person waiting.</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Approach</span>
+                <p>Built a four-role (Citizen / Staff / District Admin / Super Admin) system with token booking, live queue tracking, and Twilio WhatsApp alerts.</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Outcome</span>
+                <p>A deployment-ready, production-style platform covering the full journey — booking to notification — with JWT-secured APIs on every role.</p>
+              </div>
+            </div>
+            <div class="project-stack">
+              <span>Node.js</span><span>Express.js</span><span>MySQL</span><span>Bootstrap 5</span><span>JWT</span><span>Twilio API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/DipakDebnath12/smartq" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">
+                <i data-lucide="github" class="btn-icon"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary" data-live-demo>
+                <i data-lucide="external-link" class="btn-icon"></i> Live Demo
+              </a>
+              <button type="button" class="btn btn-sm btn-ghost" data-video-trigger data-video-type="placeholder" data-video-title="SmartQ — Product Walkthrough">
+                <i data-lucide="play-circle" class="btn-icon"></i> Watch Demo
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Smart Room Automation -->
+        <article class="project-card accent-bar tilt-card" data-reveal>
+          <div class="project-media">
+            <img src="assets/images/projects/smart-room.jpg" alt="Smart room automation dashboard controlling connected devices over WiFi" loading="lazy" width="640" height="400">
+            <span class="project-tag">P-02</span>
+            <button type="button" class="video-play-btn" data-video-trigger data-video-type="placeholder" data-video-title="Smart Room Automation — Demo" aria-label="Watch Smart Room Automation demo video">
+              <i data-lucide="play"></i>
+            </button>
+          </div>
+          <div class="project-body">
+            <h3>Smart Room Automation using NodeMCU</h3>
+            <p class="project-desc">
+              An IoT home-automation system controlling real appliances over
+              Wi-Fi from a lightweight web dashboard.
+            </p>
+            <div class="case-study">
+              <div class="case-row">
+                <span class="case-label">Problem</span>
+                <p>Wanted hands-on experience bridging hardware and software, beyond pure web development.</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Approach</span>
+                <p>Built a NodeMCU (ESP8266) + relay-based control system with a web dashboard, keeping manual switches in sync as a fallback.</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Outcome</span>
+                <p>A working, low-cost home-automation prototype controllable from any browser on the local network.</p>
+              </div>
+            </div>
+            <div class="project-stack">
+              <span>NodeMCU (ESP8266)</span><span>Arduino IDE</span><span>C++</span><span>HTML/CSS/JS</span><span>Relay Modules</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-ghost" data-github-placeholder>
+                <i data-lucide="github" class="btn-icon"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary" data-live-demo>
+                <i data-lucide="external-link" class="btn-icon"></i> Live Demo
+              </a>
+              <button type="button" class="btn btn-sm btn-ghost" data-video-trigger data-video-type="placeholder" data-video-title="Smart Room Automation — Demo">
+                <i data-lucide="play-circle" class="btn-icon"></i> Watch Demo
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: This Portfolio -->
+        <article class="project-card accent-bar tilt-card" data-reveal>
+          <div class="project-media">
+            <img src="assets/images/projects/portfolio.jpg" alt="Personal portfolio website homepage with dark tech-inspired design" loading="lazy" width="640" height="400">
+            <span class="project-tag">P-03</span>
+            <button type="button" class="video-play-btn" data-video-trigger data-video-type="placeholder" data-video-title="Portfolio — Walkthrough" aria-label="Watch portfolio walkthrough video">
+              <i data-lucide="play"></i>
+            </button>
+          </div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p class="project-desc">
+              The site you're on right now — hand-built, dependency-light,
+              and animated from scratch.
+            </p>
+            <div class="case-study">
+              <div class="case-row">
+                <span class="case-label">Problem</span>
+                <p>Needed a portfolio that reads as professional to hiring teams, not a generic page-builder template.</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Approach</span>
+                <p>Hand-built with semantic HTML, custom CSS and vanilla JavaScript, layering in GSAP-driven scroll animation.</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Outcome</span>
+                <p>A fast, accessible, animated site built entirely from scratch — no frameworks, no bloat.</p>
+              </div>
+            </div>
+            <div class="project-stack">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GSAP</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/DipakDebnath12/portfolio" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">
+                <i data-lucide="github" class="btn-icon"></i> GitHub
+              </a>
+              <a href="#home" class="btn btn-sm btn-primary">
+                <i data-lucide="external-link" class="btn-icon"></i> You're on it
+              </a>
+              <button type="button" class="btn btn-sm btn-ghost" data-video-trigger data-video-type="placeholder" data-video-title="Portfolio — Walkthrough">
+                <i data-lucide="play-circle" class="btn-icon"></i> Watch Demo
+              </button>
+            </div>
+          </div>
+        </article>
+        <!-- Project 4: Business Intelligence -->
+        <article class="project-card accent-bar tilt-card" data-reveal>
+          <div class="project-media">
+            <!--<img src="assets/images/projects/business-intelligence.jpg" alt="Business AI intelligent" loading="lazy" width="640" height="400">-->
+            <span class="project-tag">P-04</span>
+            <button type="button" class="video-play-btn" data-video-trigger data-video-type="placeholder" data-video-title="Business Intelligence — Walkthrough" aria-label="Watch business intelligence walkthrough video">
+              <i data-lucide="play"></i>
+            </button>
+          </div>
+          <div class="project-body">
+            <h3>Business Intelligence</h3>
+            <p class="project-desc">
+              Upcoming project to build business intelligence solutions using AI, Machine learning, Deep learning.
+            </p>
+            <div class="case-study">
+              <div class="case-row">
+                <span class="case-label">Problem</span>
+                <p>Complex business data analysis and interpretation for informed decision-making, Natural language processing and machine learning techniques.</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Approach</span>
+                <p>Utilizing AI and machine learning algorithms to process and analyze large volumes of business data, extracting actionable insights and patterns.</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Outcome</span>
+                <p>Enhanced decision-making capabilities through data-driven insights and automated analysis.</p>
+              </div>
+            </div>
+            <div class="project-stack">
+              <span>Python</span><span>SQL</span><span>Scikit-learn </span><span>TensorFlow</span><span>LangChain</span><span>Power BI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/DipakDebnath12/portfolio" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">
+                <i data-lucide="github" class="btn-icon"></i> GitHub
+              </a>
+              <a href="#home" class="btn btn-sm btn-primary">
+                <i data-lucide="external-link" class="btn-icon"></i> You're on it
+              </a>
+              <button type="button" class="btn btn-sm btn-ghost" data-video-trigger data-video-type="placeholder" data-video-title="Business Intelligence — Walkthrough">
+                <i data-lucide="play-circle" class="btn-icon"></i> Watch Demo
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <p class="eyebrow" data-reveal>04 / EXPERIENCE</p>
+      <h2 class="section-title" data-reveal>Experience</h2>
+      <span class="divider-grad" data-reveal></span>
+      <p class="section-sub" data-reveal>I'm a fresher by title.</p>
+
+      <!--<ol class="vtimeline" data-reveal>
+        <li class="vtimeline-item">
+          <span class="vt-dot"></span>
+          <div class="vt-card accent-bar">
+            <span class="vt-badge"><i data-lucide="code-2"></i></span>
+            <span class="vt-date">2025 – 2026</span>
+            <h3>Lead Developer, SmartQ Capstone Project</h3>
+            <p class="meta-row"><span class="meta-label">Role:</span> <span class="meta-value">Full-Stack Lead, 3-person team</span></p>
+            <p>Designed and built the full-stack architecture for a government queue-management platform as final-year lead — database schema, REST API, authentication, and the citizen/staff/admin dashboards — under faculty supervision.</p>
+          </div>
+        </li>
+        <li class="vtimeline-item">
+          <span class="vt-dot"></span>
+          <div class="vt-card accent-bar">
+            <span class="vt-badge"><i data-lucide="cpu"></i></span>
+            <span class="vt-date">2024</span>
+            <h3>IoT Project — Smart Room Automation</h3>
+            <p class="meta-row"><span class="meta-label">Role:</span> <span class="meta-value">Independent Build</span></p>
+            <p>Built a NodeMCU-based home automation prototype independently, covering both the embedded firmware and the web control interface, to explore hardware-software integration beyond pure web development.</p>
+          </div>
+        </li>
+        <li class="vtimeline-item">
+          <span class="vt-dot"></span>
+          <div class="vt-card accent-bar">
+            <span class="vt-badge"><i data-lucide="graduation-cap"></i></span>
+            <span class="vt-date">2022 – 2025</span>
+            <h3>BCA (Hons.), Siliguri College</h3>
+            <p class="meta-row"><span class="meta-label">CGPA:</span> <span class="meta-value">7.84 / 10</span></p>
+            <p>Coursework and lab work in Java, C, data structures, DBMS and web technologies, while steadily building personal full-stack projects on the side.</p>
+          </div>
+        </li>
+      </ol>-->
+    </div>
+  </section>
+
+  <!-- ===== Certifications ===== 
+  <section class="section" id="certifications">
+    <div class="container">
+      <p class="eyebrow" data-reveal>05 / CERTIFICATIONS</p>
+      <h2 class="section-title" data-reveal>Certifications</h2>
+      <span class="divider-grad" data-reveal></span>
+
+      <div class="cert-grid" data-reveal>
+        <div class="cert-card">
+          <i data-lucide="badge-check"></i>
+          <h4>Full Stack Web Development</h4>
+          <p>Node.js, Express &amp; MySQL — self-paced online certification</p>
+        </div>
+        <div class="cert-card">
+          <i data-lucide="badge-check"></i>
+          <h4>Core &amp; Advanced Java</h4>
+          <p>Object-oriented programming and application development</p>
+        </div>
+        <div class="cert-card">
+          <i data-lucide="badge-check"></i>
+          <h4>Database Management with MySQL</h4>
+          <p>Relational schema design, joins, and query optimization</p>
+        </div>
+        <div class="cert-card">
+          <i data-lucide="badge-check"></i>
+          <h4>Responsive Web Design</h4>
+          <p>HTML5, CSS3 and mobile-first layout fundamentals</p>
+        </div>
+      </div>
+      <p class="cert-note">Replace this section with your verified certificates and issuer links.</p>
+    </div>
+  </section>-->
+
+  <!-- ===== Services ===== -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <p class="eyebrow" data-reveal>06 / SERVICES</p>
+      <h2 class="section-title" data-reveal>Services</h2>
+      <span class="divider-grad" data-reveal></span>
+
+      <div class="service-grid" data-reveal>
+        <div class="service-card">
+          <div class="service-icon"><i data-lucide="code-2"></i></div>
+          <h3>Web Development</h3>
+          <p>End-to-end web applications — from database design to a working, deployed product, built on Node.js, Express and MySQL.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i data-lucide="smartphone"></i></div>
+          <h3>Responsive Websites</h3>
+          <p>Interfaces that work cleanly on phones, tablets and desktops alike, with performance and accessibility built in from the start.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i data-lucide="server-cog"></i></div>
+          <h3>Backend Development</h3>
+          <p>Secure REST APIs, authentication, role-based access control and database architecture for applications that need to scale.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i data-lucide="palette"></i></div>
+          <h3>UI Design</h3>
+          <p>Clean, modern interface design — from wireframe to polished, functional components that feel considered rather than generic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Achievements ===== 
+  <section class="section" id="achievements">
+    <div class="container">
+      <p class="eyebrow" data-reveal>07 / ACHIEVEMENTS</p>
+      <h2 class="section-title" data-reveal>Achievements</h2>
+      <span class="divider-grad" data-reveal></span>
+
+      <div class="achieve-grid" data-reveal>
+        <div class="achieve-card">
+          <i data-lucide="trophy"></i>
+          <h4>7.84 CGPA</h4>
+          <p>Graduated BCA (Hons.) from Siliguri College, NBU with strong academic standing.</p>
+        </div>
+        <div class="achieve-card">
+          <i data-lucide="rocket"></i>
+          <h4>Full-Stack Capstone Delivered</h4>
+          <p>Led development of SmartQ, a production-style four-role government platform, from schema to deployment-ready build.</p>
+        </div>
+        <div class="achieve-card">
+          <i data-lucide="cpu"></i>
+          <h4>Hardware + Software</h4>
+          <p>Built a working IoT automation system, bridging embedded hardware with a real-time web interface.</p>
+        </div>
+        <div class="achieve-card">
+          <i data-lucide="users"></i>
+          <h4>Team Leadership</h4>
+          <p>Coordinated a 3-member development team through planning, architecture and delivery of a real-world project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== 
+  <section class="section section-alt" id="testimonials">
+    <div class="container">
+      <p class="eyebrow" data-reveal>08 / TESTIMONIALS</p>
+      <h2 class="section-title" data-reveal>Testimonials</h2>
+      <span class="divider-grad" data-reveal></span>
+      <p class="section-sub" data-reveal>Sample testimonial cards — swap these for real feedback from clients, mentors or teammates.</p>
+
+      <div class="testi-track" data-reveal>
+        <div class="testi-card">
+          <p>"Dipak picked up the project requirements quickly and delivered a working, well-structured system — the kind of ownership you don't often see from a student developer."</p>
+          <div class="testi-person"><span class="testi-avatar">PM</span><div><strong>Project Mentor</strong><span>Academic Supervisor</span></div></div>
+        </div>
+        <div class="testi-card">
+          <p>"Communication was clear and the code was clean and easy to hand off. Would work with him again on the next module."</p>
+          <div class="testi-person"><span class="testi-avatar">TM</span><div><strong>Teammate</strong><span>SmartQ Project</span></div></div>
+        </div>
+        <div class="testi-card">
+          <p>"Turned a vague idea into a working prototype faster than expected, and was upfront about trade-offs along the way."</p>
+          <div class="testi-person"><span class="testi-avatar">FC</span><div><strong>Freelance Client</strong><span>Sample Placeholder</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <!-- ===== Contact ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="eyebrow" data-reveal>09 / CONTACT</p>
+      <h2 class="section-title" data-reveal>Contact</h2>
+      <span class="divider-grad" data-reveal></span>
+      <p class="section-sub" data-reveal>Have a project, an internship opening, or just a question? My inbox is open.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <a class="contact-item" href="mailto:debdipak8101@gmail.com">
+            <i data-lucide="mail"></i>
+            <div><span>Email</span><strong>debnathdipak449@gmail.com</strong></div>
+          </a>
+          <a class="contact-item" href="tel:+918101504042">
+            <i data-lucide="phone"></i>
+            <div><span>Phone</span><strong>+91 8101X XXXXX</strong></div>
+          </a>
+          <a class="contact-item" href="https://linkedin.com/in/dipakdebnath" target="_blank" rel="noopener">
+            <i data-lucide="linkedin"></i>
+            <div><span>LinkedIn</span><strong>/in/dipakdebnath</strong></div>
+          </a>
+          <a class="contact-item" href="https://github.com/DipakDebnath12" target="_blank" rel="noopener">
+            <i data-lucide="github"></i>
+            <div><span>GitHub</span><strong>/DipakDebnath12</strong></div>
+          </a>
+          <a class="contact-item" href="#" tabindex="-1">
+            <i data-lucide="map-pin"></i>
+            <div><span>Location</span><strong>Balurghat, Dakshin Dinajpur, West Bengal — 733103</strong></div>
+          </a>
+        </div>
+
+        <form
+          class="contact-form"
+          id="contact-form"
+          novalidate
+          data-reveal
+          action="https://formspree.io/f/mgaekydq"
+          method="POST"
+        >
+          <!-- Honeypot spam trap: real visitors never see or fill this in.
+               If it arrives filled in, Formspree silently discards the submission. -->
+          <!--<input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">-->
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name">
+              <span class="field-error" data-error-for="name"></span>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+              <span class="field-error" data-error-for="email"></span>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="_subject" placeholder="What's this about?" required>
+            <span class="field-error" data-error-for="subject"></span>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about the project…" required></textarea>
+            <span class="field-error" data-error-for="message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i data-lucide="send" class="btn-icon"></i>
+            <span class="btn-label">Send Message</span>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="#home" class="brand footer-brand">
+      <span class="brand-badge">DD</span>
+      <span class="brand-name">Dipak<span class="accent">.</span>in</span>
+    </a>
+    <div class="footer-social">
+      <a href="https://github.com/DipakDebnath12" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></i></a>
+      <a href="https://linkedin.com/in/dipakdebnath" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></i></a>
+      <a href="mailto:debdipak8101@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      <a href="#" aria-label="Twitter / X"><i data-lucide="twitter"> </i> </a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Dipak Debnath. All rights reserved.</p>
+  </div>
+</footer>
 
 
-    <!--Custome JS-->
-    <script src="script.js"></script>
+<!-- ===== Back to top ===== -->
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+  <i data-lucide="arrow-up"></i>
+</button>
+
+<!-- ===== Video Demo Modal ===== -->
+<div class="video-modal" id="video-modal" aria-hidden="true">
+  <div class="video-modal-backdrop" data-video-close></div>
+  <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+    <button type="button" class="video-modal-close" data-video-close aria-label="Close video">
+      <i data-lucide="x"></i>
+    </button>
+    <h3 id="video-modal-title" class="video-modal-title">Project Demo</h3>
+    <div class="video-modal-body" id="video-modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
 </body>
 </html>
