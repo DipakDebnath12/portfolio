@@ -1,8 +1,3 @@
-/* =========================================================
-   Dipak Debnath — Portfolio Script
-   Vanilla JS. No frameworks. Reusable, small functions.
-   ========================================================= */
-
 document.addEventListener('DOMContentLoaded', () => {
   initLucideIcons();
   initLoadingScreen();
@@ -25,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('year').textContent = new Date().getFullYear();
 });
 
-/* ---------- Lucide icons ---------- */
 function initLucideIcons() {
   if (window.lucide && typeof window.lucide.createIcons === 'function') {
     window.lucide.createIcons();
@@ -35,18 +29,17 @@ function initLucideIcons() {
   }
 }
 
-/* ---------- Loading screen ---------- */
 function initLoadingScreen() {
   const screen = document.getElementById('loading-screen');
   if (!screen) return;
   window.addEventListener('load', () => {
     setTimeout(() => screen.classList.add('hidden'), 500);
   });
-  // Fallback in case 'load' is delayed by slow external fonts/scripts.
+  
   setTimeout(() => screen.classList.add('hidden'), 3000);
 }
 
-/* ---------- Custom cursor ---------- */
+
 function initCursor() {
   if (window.matchMedia('(hover: none), (pointer: coarse)').matches) return;
   const dot = document.querySelector('.cursor-dot');
@@ -77,7 +70,7 @@ function initCursor() {
   });
 }
 
-/* ---------- Navbar background on scroll ---------- */
+
 function initNavbar() {
   const nav = document.getElementById('navbar');
   if (!nav) return;
@@ -86,7 +79,7 @@ function initNavbar() {
   window.addEventListener('scroll', onScroll, { passive: true });
 }
 
-/* ---------- Mobile nav toggle ---------- */
+
 function initMobileNav() {
   const burger = document.getElementById('nav-toggle');
   const links = document.getElementById('nav-links');
@@ -106,7 +99,7 @@ function initMobileNav() {
   }));
 }
 
-/* ---------- Active nav link on scroll (scrollspy) ---------- */
+
 function initScrollSpy() {
   const sections = document.querySelectorAll('main section[id]');
   const navLinks = document.querySelectorAll('[data-nav]');
@@ -126,7 +119,7 @@ function initScrollSpy() {
   sections.forEach((section) => observer.observe(section));
 }
 
-/* ---------- Dark / light theme toggle ---------- */
+
 function initThemeToggle() {
   const toggle = document.getElementById('theme-toggle');
   const root = document.documentElement;
@@ -144,7 +137,7 @@ function initThemeToggle() {
   });
 }
 
-/* ---------- Hero typing effect ---------- */
+
 function initTypedRole() {
   const el = document.getElementById('typed-role');
   if (!el) return;
@@ -170,7 +163,7 @@ function initTypedRole() {
   tick();
 }
 
-/* ---------- Hero entrance animation (GSAP timeline) ---------- */
+
 function initHeroTimeline() {
   const hero = document.querySelector('.hero-copy');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -193,13 +186,13 @@ function initHeroTimeline() {
   });
 }
 
-/* ---------- Scroll reveal (GSAP ScrollTrigger, staggers siblings) ---------- */
+
 function initScrollReveal() {
   const items = document.querySelectorAll('[data-reveal]');
   if (!items.length) return;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Fallback: no GSAP/ScrollTrigger available, or reduced motion — reveal instantly via IntersectionObserver.
+
   if (reduceMotion || !window.gsap || !window.ScrollTrigger) {
     const observer = new IntersectionObserver((entries, obs) => {
       entries.forEach((entry) => {
@@ -230,7 +223,7 @@ function initScrollReveal() {
   });
 }
 
-/* ---------- Tilt-on-hover for project cards (GSAP quickTo) ---------- */
+
 function initTiltCards() {
   if (window.matchMedia('(hover: none), (pointer: coarse)').matches) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -259,7 +252,7 @@ function initTiltCards() {
   });
 }
 
-/* ---------- Animated stat counters ---------- */
+
 function initCounters() {
   const counters = document.querySelectorAll('.stat-num[data-count]');
   if (!counters.length) return;
@@ -283,7 +276,7 @@ function initCounters() {
   counters.forEach((c) => observer.observe(c));
 }
 
-/* ---------- Animated skill progress bars ---------- */
+
 function initSkillBars() {
   const bars = document.querySelectorAll('.skill-fill[data-level]');
   if (!bars.length) return;
@@ -298,7 +291,7 @@ function initSkillBars() {
   bars.forEach((b) => observer.observe(b));
 }
 
-/* ---------- Back to top button ---------- */
+
 function initBackToTop() {
   const btn = document.getElementById('back-to-top');
   if (!btn) return;
@@ -308,7 +301,7 @@ function initBackToTop() {
   btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
 
-/* ---------- Smooth anchor scrolling with navbar offset ---------- */
+
 function initSmoothAnchors() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
@@ -324,7 +317,7 @@ function initSmoothAnchors() {
   });
 }
 
-/* ---------- Contact form validation ---------- */
+
 function initContactForm() {
   const form = document.getElementById('contact-form');
   const status = document.getElementById('form-status');
@@ -426,7 +419,6 @@ function initContactForm() {
   });
 }
 
-/* ---------- Placeholder link notices (demo/github not yet linked) ---------- */
 function initPlaceholderLinks() {
   document.querySelectorAll('[data-live-demo], [data-github-placeholder]').forEach((link) => {
     link.addEventListener('click', (e) => {
@@ -439,7 +431,6 @@ function initPlaceholderLinks() {
   });
 }
 
-/* ---------- Video demo modal ---------- */
 function initVideoModal() {
   const modal = document.getElementById('video-modal');
   if (!modal) return;
